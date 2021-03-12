@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Meteo</string>
+
+    <string-array name="region">
+
+        <item>Mahdia</item>
+        <item>ben arous</item>
+        <item>tunis</item>
+        <item>ariana</item>
+        <item>sousse</item>
+        <item>sidi bouzid</item>
+        <item>Kasserine</item>
+
+
+    </string-array>
+</resources>

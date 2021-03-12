@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/coco"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/rech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rechercher" />
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@drawable/coco"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/txtCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="City"
+                    android:textColor="#17202A"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtCity"
+                    android:fontFamily="sans-serif"
+                    android:text="Time"
+                    android:textColor="#17202A"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/imgIcon"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@id/txtTime"
+                    android:src="@drawable/phc" />
+
+                <TextView
+                    android:id="@+id/txtValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/imgIcon"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="3°"
+                    android:textColor="#17202A"
+                    android:textSize="70dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSub"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_below="@id/rlMain"
+                android:background="#ffffff"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imgFeelLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/temp" />
+
+                <TextView
+                    android:id="@+id/txtTitleFeelLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgFeelLike"
+                    android:text="Feel Like"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtValueFeelLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTitleFeelLike"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgFeelLike"
+                    android:text="7°"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgFeelLike"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/humidity" />
+
+                <TextView
+                    android:id="@+id/txtTitleHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imgHumidity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgHumidity"
+                    android:text="Humidity"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtValueHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTitleHumidity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgHumidity"
+                    android:text="7°"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgVision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgHumidity"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/vision" />
+
+                <TextView
+                    android:id="@+id/txtTitleVision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imgVision"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imgVision"
+                    android:text="Vision"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txtValueVision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtTitleVision"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/imgVision"
+                    android:text="7°"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</GridLayout>
